@@ -206,7 +206,24 @@ export default function Home() {
 
       
 
-     
+      {/* Contact Section with Aurora Background */}
+      <AuroraBackground className="min-h-[50vh] flex flex-col items-center justify-center p-8">
+        <div className="max-w-4xl text-center z-10">
+          <h2 className="text-4xl font-bold mb-6 text-white">Get Involved</h2>
+          <p className="text-lg mb-8 text-neutral-200">
+            Join Malala in her mission to ensure every girl has access to 12
+            years of free, safe, quality education.
+          </p>
+          <a
+            href="https://malala.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition-colors"
+          >
+            Support the Cause
+          </a>
+        </div>
+      </AuroraBackground>
     </div>
   );
 }
