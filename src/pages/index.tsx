@@ -204,13 +204,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Add testimonials section */}
-      <section className="py-24 px-8 bg-black">
-        <h2 className="text-4xl font-bold text-center mb-16 text-white">What Others Say</h2>
-        <div className="max-w-6xl mx-auto">
-          <AnimatedTestimonials testimonials={testimonials} />
-        </div>
-      </section>
+      
 
      
     </div>
