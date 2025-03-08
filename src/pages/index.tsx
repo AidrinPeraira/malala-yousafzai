@@ -25,7 +25,7 @@ const parallaxItems = [
   {
     title: "Women's Rights",
     link: "#",
-    thumbnail: "https://images.unsplash.com/photo-1621352404112-58e2468993a0?q=80&w=1000", // Replace with Malala image
+    thumbnail: "https://imgs.search.brave.com/vgHMx8bH-5_am1Br4mNL5JNZqwija_1vqNm-e2xjPNU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMjIvTWFs/YWxhLVlvdXNhZnph/aS1QTkctRmlsZS5w/bmc", // Replace with Malala image
   },
   {
     title: "Global Impact",
@@ -139,7 +139,6 @@ const testimonials = [
     src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" // Replace with Malala image
   }
 ];
-
 export default function Home() {
   return (
     <div
@@ -167,6 +166,7 @@ export default function Home() {
           </p>
         </div>
       </AuroraBackground>
+      
 
       <section className="py-32 px-8 bg-neutral-900">
         <h2 className="text-4xl font-bold text-center mb-16 text-white">
@@ -204,26 +204,15 @@ export default function Home() {
         </div>
       </section>
 
-      
-
-      {/* Contact Section with Aurora Background */}
-      <AuroraBackground className="min-h-[50vh] flex flex-col items-center justify-center p-8">
-        <div className="max-w-4xl text-center z-10">
-          <h2 className="text-4xl font-bold mb-6 text-white">Get Involved</h2>
-          <p className="text-lg mb-8 text-neutral-200">
-            Join Malala in her mission to ensure every girl has access to 12
-            years of free, safe, quality education.
-          </p>
-          <a
-            href="https://malala.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition-colors"
-          >
-            Support the Cause
-          </a>
+      {/* Add testimonials section */}
+      <section className="py-24 px-8 bg-black">
+        <h2 className="text-4xl font-bold text-center mb-16 text-white">What Others Say</h2>
+        <div className="max-w-6xl mx-auto">
+          <AnimatedTestimonials testimonials={testimonials} />
         </div>
-      </AuroraBackground>
+      </section>
+
+     
     </div>
   );
 }
